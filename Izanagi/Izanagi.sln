@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Izanagi.CSharp", "Izanagi.CSharp.csproj", "{BA90D3B1-6AE4-EA7B-21A5-D58E30FB1A51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Izanagi.CSharp.Editor", "Izanagi.CSharp.Editor.csproj", "{6E2DFCB6-C08D-AA67-0613-E3BCE08052EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA90D3B1-6AE4-EA7B-21A5-D58E30FB1A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA90D3B1-6AE4-EA7B-21A5-D58E30FB1A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA90D3B1-6AE4-EA7B-21A5-D58E30FB1A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA90D3B1-6AE4-EA7B-21A5-D58E30FB1A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2DFCB6-C08D-AA67-0613-E3BCE08052EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2DFCB6-C08D-AA67-0613-E3BCE08052EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2DFCB6-C08D-AA67-0613-E3BCE08052EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2DFCB6-C08D-AA67-0613-E3BCE08052EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
