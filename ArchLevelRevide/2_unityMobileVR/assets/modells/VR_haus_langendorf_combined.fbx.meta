@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 35ce9e3d4d3e0e443b25431a5d602fae
+timeCreated: 1479894296
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fernseher
+    100002: garage
+    100004: garagen_tor
+    100006: gelaender
+    100008: gelaender_treppe
+    100010: haus
+    100012: haus_collider
+    100014: human_II
+    100016: kuecheninsel
+    100018: kuechenschrank
+    100020: lichtschacht_1
+    100022: lichtschacht_2
+    100024: schrank_wohnzimmer
+    100026: sofa
+    100028: teppich
+    100030: terasse
+    100032: tisch
+    100034: treppe.001
+    100036: umgebung.001
+    100038: //RootNode
+    100040: wohnzimmerTisch
+    400000: fernseher
+    400002: garage
+    400004: garagen_tor
+    400006: gelaender
+    400008: gelaender_treppe
+    400010: haus
+    400012: haus_collider
+    400014: human_II
+    400016: kuecheninsel
+    400018: kuechenschrank
+    400020: lichtschacht_1
+    400022: lichtschacht_2
+    400024: schrank_wohnzimmer
+    400026: sofa
+    400028: teppich
+    400030: terasse
+    400032: tisch
+    400034: treppe.001
+    400036: umgebung.001
+    400038: //RootNode
+    400040: wohnzimmerTisch
+    2300000: fernseher
+    2300002: garage
+    2300004: garagen_tor
+    2300006: gelaender
+    2300008: gelaender_treppe
+    2300010: haus
+    2300012: haus_collider
+    2300014: human_II
+    2300016: kuecheninsel
+    2300018: kuechenschrank
+    2300020: lichtschacht_1
+    2300022: lichtschacht_2
+    2300024: schrank_wohnzimmer
+    2300026: sofa
+    2300028: teppich
+    2300030: terasse
+    2300032: tisch
+    2300034: treppe.001
+    2300036: umgebung.001
+    2300038: wohnzimmerTisch
+    3300000: fernseher
+    3300002: garage
+    3300004: garagen_tor
+    3300006: gelaender
+    3300008: gelaender_treppe
+    3300010: haus
+    3300012: haus_collider
+    3300014: human_II
+    3300016: kuecheninsel
+    3300018: kuechenschrank
+    3300020: lichtschacht_1
+    3300022: lichtschacht_2
+    3300024: schrank_wohnzimmer
+    3300026: sofa
+    3300028: teppich
+    3300030: terasse
+    3300032: tisch
+    3300034: treppe.001
+    3300036: umgebung.001
+    3300038: wohnzimmerTisch
+    4300000: haus_collider
+    4300002: teppich
+    4300004: sofa
+    4300006: fernseher
+    4300008: wohnzimmerTisch
+    4300010: tisch
+    4300012: umgebung.001
+    4300014: treppe.001
+    4300016: haus
+    4300018: kuecheninsel
+    4300020: lichtschacht_1
+    4300022: lichtschacht_2
+    4300024: garage
+    4300026: kuechenschrank
+    4300028: garagen_tor
+    4300030: terasse
+    4300032: schrank_wohnzimmer
+    4300034: gelaender_treppe
+    4300036: gelaender
+    4300038: human_II
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
