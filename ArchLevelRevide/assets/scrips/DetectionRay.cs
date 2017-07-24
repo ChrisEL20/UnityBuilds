@@ -5,27 +5,18 @@ using UnityEngine.UI;
 public class DetectionRay : MonoBehaviour {
 
     public LayerMask rayLayers;
-    //public Image rayImage;
-    public MeshRenderer reticleRenderer;
+    public Image rayImage;
     
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
 	void Update () {
-        if (this.reticleRenderer == null)
-            return;
 
         RaycastHit hit;
         if (Physics.Raycast(this.gameObject.transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.5f, rayLayers))
         {
-            var objectMatSwitchComp = hit.collider.gameObject.GetComponent(typeof(ObjectMaterialSwitch)) as ObjectMaterialSwitch;
+            
+            ObjectMaterialSwitch objectMatSwitchComp = hit.collider.gameObject.GetComponent(typeof(ObjectMaterialSwitch)) as ObjectMaterialSwitch;
             if (objectMatSwitchComp != null && objectMatSwitchComp.isUIActive == false)
             {
-                //this.rayImage.color = new Color(1, 1, 1, 0.5f);
-                this.reticleRenderer.material.color = new Color(1, 1, 1, 0.5f);
+                StartCoroutine(this.FadeInCourser());
 
                 if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButtonDown(0))
                 {
@@ -34,30 +25,73 @@ public class DetectionRay : MonoBehaviour {
                 return;
             }
 
-            var objectSwitchButtonComp = hit.collider.GetComponent(typeof(MaterialSwitchButton)) as MaterialSwitchButton;
+            MaterialSwitchButton objectSwitchButtonComp = hit.collider.GetComponent(typeof(MaterialSwitchButton)) as MaterialSwitchButton;
             if (objectSwitchButtonComp != null)
             {
-                this.reticleRenderer.material.color = new Color(1, 1, 1, 0.5f);
-                //this.rayImage.color = new Color(1, 1, 1, 0.5f);
+                StartCoroutine(this.FadeInCourser());
                 if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButtonDown(0))
                     objectSwitchButtonComp.SwitchMaterial();
                 return;
             }
 
-            var openDoorComp = hit.collider.GetComponent(typeof(OpenDoor)) as OpenDoor;
+            OpenDoor openDoorComp = hit.collider.GetComponent(typeof(OpenDoor)) as OpenDoor;
             if (openDoorComp != null && openDoorComp.canOpen == true)
             {
-                this.reticleRenderer.material.color = new Color(1, 1, 1, 0.5f);
+                StartCoroutine(this.FadeInCourser());
                 if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetMouseButtonDown(0))
                     openDoorComp.ToggleDoor();
             }
             else
-                this.reticleRenderer.material.color = new Color(1, 1, 1, 0f);
+                StartCoroutine(this.FadeOutCourser());
         }
+        //Hide Curser
         else
         {
-            //this.rayImage.color = new Color(1, 1, 1, 0f);
-            this.reticleRenderer.material.color = new Color(1, 1, 1, 0f);
+            StartCoroutine(this.FadeOutCourser());
         }
 	}
+
+    IEnumerator FadeOutCourser()
+    {
+        if (this.rayImage != null)
+        {
+            for (int i = 0; i < 1; i += 0)
+            {
+                if (this.rayImage.color.a <= 0f)
+                {
+                    i = 1;
+                    this.rayImage.color = new Color(1, 1, 1, 0f);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(0.1f);
+                    Color newColor = this.rayImage.color;
+                    newColor.a -= 0.05f;
+                    this.rayImage.color = newColor;
+                }
+            }
+        }
+    }
+
+    IEnumerator FadeInCourser()
+    {
+        if (this.rayImage != null)
+        {
+            for (int i = 0; i < 1; i += 0)
+            {
+                if (this.rayImage.color.a >= 0.5f)
+                {
+                    i = 1;
+                    this.rayImage.color = new Color(1, 1, 1, 0.5f);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(0.1f);
+                    Color newColor = this.rayImage.color;
+                    newColor.a += 0.05f;
+                    this.rayImage.color = newColor;
+                }
+            }
+        }
+    }
 }

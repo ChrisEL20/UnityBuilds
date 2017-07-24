@@ -84,6 +84,10 @@
     <Compile Include="assets\scrips\Mouselook.cs" />
     <Compile Include="assets\scrips\ObjectMaterialSwitch.cs" />
     <Compile Include="assets\scrips\OpenDoor.cs" />
+    <Compile Include="assets\VR-Step\Scripts\ChildOnlyPosition.cs" />
+    <Compile Include="assets\VR-Step\Scripts\PlaySoundOnStep.cs" />
+    <Compile Include="assets\VR-Step\Scripts\StepDetector.cs" />
+    <Compile Include="assets\VR-Step\Scripts\WIPController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
