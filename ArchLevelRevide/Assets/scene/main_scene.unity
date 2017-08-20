@@ -1870,7 +1870,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11416048, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
       propertyPath: maxForwardVelocity
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11416048, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
       propertyPath: minForwardVelocity
