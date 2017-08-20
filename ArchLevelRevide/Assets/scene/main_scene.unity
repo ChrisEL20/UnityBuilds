@@ -1864,6 +1864,18 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 1.788
       objectReference: {fileID: 0}
+    - target: {fileID: 11416048, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
+      propertyPath: jumpEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416048, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
+      propertyPath: maxForwardVelocity
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416048, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
+      propertyPath: minForwardVelocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 020f1a656f6748346ac59c45c4b5abf7, type: 2}
   m_IsPrefabParent: 0
