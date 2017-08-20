@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{6b2f370a-08a7-4b2a-ae54-7e7e810fa6a9}">
+        <property name="assetPath">
+            <value>004 Pickup_coin.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.45668934240362813</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{656621b9-37f4-41db-9ff6-1368d5f6f921}</destination>
+        </relationship>
+    </object>
+</objects>

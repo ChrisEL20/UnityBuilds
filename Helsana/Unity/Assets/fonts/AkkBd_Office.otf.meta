@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 01fe410ce35eddf4f955f59f4a329913
+timeCreated: 1500485057
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Akkurat Office
+  fontNames:
+  - Akkurat Office
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
