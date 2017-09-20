@@ -9,11 +9,11 @@ public class LiftController : MonoBehaviour {
     public Vector3 bPosOffset;
     private Vector3 aPos;
     private Vector3 bPos;
-    private Vector3 lastPos;
+    //private Vector3 lastPos;
     private Vector3 nextPos;
     public bool aFallResetPos;
     public bool bFallResetPos;
-    private float maxDistance;
+    //private float maxDistance;
     public AnimationCurve speedAnimationCurve;
 
     private GameObject targetPassanger;
@@ -32,9 +32,9 @@ public class LiftController : MonoBehaviour {
     {
         this.aPos = this.gameObject.transform.position;
         this.bPos = this.aPos + this.bPosOffset;
-        this.maxDistance = Vector3.Distance(this.aPos, this.bPos);
+        //this.maxDistance = Vector3.Distance(this.aPos, this.bPos);
         this.nextPos = this.aPos;
-        this.lastPos = this.bPos;
+        //this.lastPos = this.bPos;
     }
 
     void Update()
@@ -83,12 +83,12 @@ public class LiftController : MonoBehaviour {
         if (this.nextPos == this.aPos)
         {
             this.nextPos = this.bPos;
-            this.lastPos = this.aPos;
+            //this.lastPos = this.aPos;
         }
         else
         {
             this.nextPos = this.aPos;
-            this.lastPos = this.bPos;
+            //this.lastPos = this.bPos;
         }
     }
 
@@ -101,12 +101,12 @@ public class LiftController : MonoBehaviour {
             if (this.aFallResetPos)
             {
                 this.nextPos = aPos;
-                this.lastPos = bPos;
+                //this.lastPos = bPos;
             }
             else if (this.bFallResetPos)
             {
                 this.nextPos = bPos;
-                this.lastPos = aPos;
+                //this.lastPos = aPos;
             }
             else
                 this.ToggleNextTarget();
